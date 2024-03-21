@@ -14,6 +14,10 @@
 - kes: kubectl exec -it {pod_name} -- /bin/sh                 // Execute a shell within a pod
 - kcpf: kubectl cp {namespace}/{pod}:/{pod_dir} /{local_dir}` // Copy files from pod to local dir
 
+## Airflow
+
+- af_export_connections: kcp {namespace}/{scheduler_pod}/opt/airflow/connections.json /connections.json
+
 ## Others
 
 - ps: ps aux            // Check running processes
