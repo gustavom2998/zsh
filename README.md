@@ -13,7 +13,7 @@
 
 - kes: kubectl exec -it {pod_name} -- /bin/sh                 // Execute a shell within a pod
 - kcpf: kubectl cp {namespace}/{pod}:/{pod_dir} /{local_dir}` // Copy files from pod to local dir
-- kshell: kubectl run -i --tty gu-shell --rm=true --restart=Never --namespace "{namespace}" --image "{image}" --comand -- bash // Spin up a pod with a bash instance
+- kshell: kubectl run -i --tty gu-shell --rm=true --restart=Never --namespace "{namespace}" --image "{image}" --command -- bash // Spin up a pod with a bash instance
 
 ## Airflow
 
